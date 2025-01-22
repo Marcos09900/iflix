@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMES MAIS VOTADOS</title>
+    <link rel="stylesheet" href="..//static//melhores_filmes.css">
+    <link rel="stylesheet" href="..//static//logout.css">
+
+</head>
+<body>
+<main>
+<div class ="logout-btn" >
+ <form action="/logout" method="post">
+     <a href="/">logout</a>
+    </form>
+</div>
+    <header>
+        <h1>FILMES MAIS VOTADOS</h1>
+        <h2>Veja aqui quais são os filmes mais votados do site</h2>
+    </header>
+
+    <div class="movie-list">
+
+        {% for filme in lista %}
+            <div class="movie-item">
+                <h3>{{filme[1]}}</h3>
+
+                <h2 class="page-title">VOTOS RECEBIDOS</h2>
+                <ul class="user-list">
+                    <h3>{{filme[2]}}</h3>
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+</main>
+
+
+</body>
+</html>

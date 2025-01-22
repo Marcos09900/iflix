@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFlix</title>
+    <link rel="stylesheet" href="..//static//IFlix.css">
+    <link rel="stylesheet" href="..//static//logout.css">
+
+</head>
+<body>
+
+<div class ="logout-btn" >
+        <form action="/logout" method="post">
+        <a href="/">logout</a>
+    </form>
+    </div>
+
+    <h1>IFlix</h1>
+    <h2>Top 10 filmes 10/10 do último século</h2>
+    <a href="/listar_votos">
+        <h2>Clique para verificar os filmes mais votados</h2>
+    </a>
+
+    <div class="movie">
+        <h3>1) Senhor dos Aneis: O Retorno do Rei</h3>
+        <h4>RESUMO</h4>
+        <h3>Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf e Pippin partam para o local na intenção de ajudar a resistência. Frodo, Sam e Gollum seguem sua viagem rumo à Montanha da Perdição para destruir o anel.</h3>
+        <img src="static/imagens/1.jpg" alt="Senhor dos aneis">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/r5X-hFf6Bwo?si=NcLRjSrE6d9ljbpz" target="_blank">Assista ao Trailer</a>
+        </div>
+        <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="0">
+            <button class="vote-button">Vote neste filme </button>
+        </form>
+
+
+    </div>
+
+    <div class="movie">
+        <h3>2) Interestelar</h3>
+        <h4>RESUMO</h4>
+        <h3>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.</h3>
+        <img src="static/imagens/2.jpg" alt="Interestelar">
+         <div class="linkTrailer">
+        <a href="https://youtu.be/i6avfCqKcQo?si=9jqBEHjmMiUqvFjy" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="1">
+            <button class="vote-button">Vote neste filme</button>
+         </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>3) Django Livre</h3>
+        <h4>RESUMO</h4>
+        <h3>No sul dos Estados Unidos, o ex-escravo Django faz uma aliança inesperada com o caçador de recompensas Schultz para perseguir os criminosos mais procurados do país e resgatar sua esposa de um fazendeiro que força seus escravos a entrarem em competições mortais.</h3>
+        <img src="static/imagens/3.webp" alt="Django">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/0fUCuvNlOCg?si=GmT9OwfzE5sLVP6M" target="_blank">Assista ao Trailer</a>
+        </div>
+            <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="2">
+            <button class="vote-button">Vote neste filme</button>
+            </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>4) O Menino do Pijama Listrado</h3>
+        <h4>RESUMO</h4>
+        <h3>Durante a Segunda Guerra Mundial, Bruno, um garoto de oito anos, e sua família saem de Berlim para residir próximo a um campo de concentração, onde seu pai acaba de se tornar comandante. Infeliz e solitário, ele vagueia fora de sua casa e certo dia encontra Shmuel, um menino judeu de sua idade. Embora a cerca de arame farpado do campo os separem, os meninos começam uma amizade proibida.</h3>
+        <img src="static/imagens/4.jpg" alt="omenino">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/uZD-ySKl91A?si=K4Df5judl-HjbrYm" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="3">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>5) O Lobo de Wall Street</h3>
+        <h4>RESUMO</h4>
+        <h3>Jordan Belfort é um ambicioso corretor da bolsa de valores que cria um verdadeiro império, enriquecendo de forma rápida, porém ilegal. Ele e seus amigos mergulham em um mundo de excessos, mas seus métodos ilícitos despertam a atenção da polícia.</h3>
+        <img src="static/imagens/5.jpg" alt="O lobo de wall street">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/PoSCUsNQVtw?si=bboTm2eGYmRD68EB" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="4">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>6) V de Vingança</h3>
+        <h4>RESUMO</h4>
+        <h3>Após uma guerra mundial, a Inglaterra é ocupada por um governo fascista e vive sob um regime totalitário. Na luta pela liberdade, um vigilante, conhecido apenas como V, utiliza-se de táticas terroristas para enfrentar os opressores da sociedade. V salva uma jovem chamada Evey da polícia secreta e encontra nela uma nova aliada em busca de liberdade e justiça para o seu país.</h3>
+        <img src="static/imagens/6.webp" alt="V de vinganca">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/lSA7mAHolAw?si=M2yPobpysAQu0z2q" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="5">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>7) Green Book</h3>
+        <h4>RESUMO</h4>
+        <h3>Dr. Don Shirley é um pianista afro-americano de renome mundial, prestes a embarcar em uma turnê pelo sul dos Estados Unidos, em 1962. Como precisa de um motorista e guarda-costas, Shirley recruta Tony Lip, um ítalo-americano fanfarrão do Bronx. Apesar de suas diferenças, os dois homens desenvolvem uma ligação inesperada ao enfrentar o racismo e os perigos de uma era de segregação racial.</h3>
+          <img src="static/imagens/7.webp" alt="Green book">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/QxXJ7vkFk48?si=Ns3R2K395f39IITi" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="6">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>8) Corra!</h3>
+        <h4>RESUMO</h4>
+        <h3>Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Na luxuosa propriedade dos pais dela, Chris percebe que a família esconde algo muito perturbador.</h3>
+        <img src="static/imagens/8.webp" alt="Corra">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/mDGV5UucTu8?si=CM2cwFhT979DuOQT" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="7">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>9) Parasita</h3>
+        <h4>RESUMO</h4>
+        <h3>Toda a família de Ki-taek está desempregada, vivendo em um porão sujo e apertado. Por obra do acaso, ele começa a dar aulas de inglês para uma garota de família rica. Fascinados com a vida luxuosa destas pessoas, pai, mãe e filhos bolam um plano para se infiltrar também na abastada família, um a um. No entanto, os segredos e mentiras necessários à ascensão social cobram o seu preço.</h3>
+          <img src="static/imagens/9.webp" alt="Parasita">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/m4jfE-TxC24?si=60pZhprKG_llNJ9G" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="8">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+
+    <div class="movie">
+        <h3>10) O Jogo da Imitação</h3>
+        <h4>RESUMO</h4>
+        <h3>Em 1939, a recém-criada agência de inteligência britânica MI6 recruta Alan Turing, um aluno da Universidade de Cambridge, para entender códigos nazistas, incluindo o "Enigma", que criptógrafos acreditavam ser inquebrável. A equipe de Turing, incluindo Joan Clarke, analisa as mensagens de "Enigma", enquanto ele constrói uma máquina para decifrá-las. Após desvendar as codificações, Turing se torna herói. Porém, em 1952, autoridades revelam sua homossexualidade, e a vida dele vira um pesadelo.</h3>
+          <img src="static/imagens/10.download" alt="Interestelar">
+        <div class="linkTrailer">
+        <a href="https://youtu.be/YIkKbMcJL_4?si=oV84uCt07AKqcpf1" target="_blank">Assista ao Trailer</a>
+        </div>
+         <form action="/vote_button" method="post">
+            <input type="hidden" name="filme" value="9">
+            <button class="vote-button">Vote neste filme</button>
+        </form>
+
+    </div>
+</body>
+</html>

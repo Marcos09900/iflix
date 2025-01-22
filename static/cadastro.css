@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e9f7ef, #c8e6c9);
+}
+
+.cadastro-container {
+   background-color: #ffffff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadastro-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cadastro-container h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container input[type="text"],
+.cadastro-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #a5d6a7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #2e7d32;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadastro-container input[type="text"]:focus,
+.cadastro-container input[type="password"]:focus {
+     border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.cadastro-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cadastro-container button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.cadastro-container button:active {
+    background-color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+    .cadastro-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('..//static//imagens//IFlix.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cadastro-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.cadastro-container h1, .cadastro-container h2 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.cadastro-container form {
+    margin: 0;
+}
+
+.cadastro-container input[type="text"],
+.cadastro-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cadastro-container button {
+    width: 100%;
+    padding: 10

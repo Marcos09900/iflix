@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="..//static//styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindos ao sistema IFLIX</h1>
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="text" placeholder="usuário" name="username" required>
+            <input type="password" placeholder="Senha" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="/cadastrarusuario">Não tem uma conta? Cadastre-se</a>
+        <br><br>
+        <hr>
+        <a>{{msg}}</a>
+    </div>
+</body>
+</html>
