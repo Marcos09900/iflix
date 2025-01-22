@@ -4,10 +4,15 @@ def conectardb():
 
     con = psycopg2.connect(
 
-        host='localhost',
-        database = 'IFlix',
-        user = 'postgres',
-        password = '123'
+        #host='localhost',
+        #database = 'IFlix',
+        #user = 'postgres',
+        #password = '123'
+
+        host = 'dpg-cu8g0h5ds78s73a7o5c0-a.oregon-postgres.render.com',
+        database = 'iflix',
+        user = 'iflix_user',
+        password = 'OpeKXG1Ajh8dqs8RJDzaYVUU1TZAwEmI'
     )
     return con
 
