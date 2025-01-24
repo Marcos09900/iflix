@@ -53,7 +53,6 @@ def fazer_logout():
     session.pop('login')
     return render_template('principal.html')
 
-
 @app.route('/vote_button', methods=['POST'])
 def votar_filme():
     id = request.form.get('filme')
