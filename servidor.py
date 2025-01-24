@@ -66,6 +66,10 @@ def listar_usuarios():
     print(votos)
     return render_template('melhores_filmes.html', lista=votos)
 
+@app.route('/nao_cadastrado')
+def usuario_naocadastrado():
+    return render_template('naocadastrado.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
