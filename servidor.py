@@ -3,6 +3,8 @@ import dao
 
 app = Flask(__name__)
 
+app.secret_key = 'FSM310411@'
+
 @app.route('/')
 def principal():
     return render_template('principal.html')
@@ -14,7 +16,11 @@ def mostrar_pagina_cadastro():
 
 @app.route('/melhores_filmes')
 def mostrar_pagina_filmes():
-    return render_template('melhores_filmes.html')
+    if 'login' in session:
+        usuario = dao.listar_votos()
+        return render_template('melhores_filmes.html', lista=usuario)
+    else:
+        return render_template('principal.html')
 
 
 @app.route('/inserirusuario', methods=['POST'])
@@ -36,13 +42,16 @@ def fazer_login():
 
 
     if len(dao.login(login, senha)) > 0:
+        session['login'] = login
         return render_template('iflix.html')
+
     else:
         return render_template('principal.html')
 
 @app.route('/logout', methods=['POST'])
 def fazer_logout():
-    return render_template('iflix.html')
+    session.pop('login')
+    return render_template('principal.html')
 
 
 @app.route('/vote_button', methods=['POST'])
@@ -58,4 +67,5 @@ def listar_usuarios():
     return render_template('melhores_filmes.html', lista=votos)
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
