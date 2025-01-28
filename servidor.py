@@ -35,8 +35,11 @@ def inserir_usuario():
         return render_template('principal.html', msg='Usuário já existente')
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST', 'GET'])
 def fazer_login():
+
+    if request.method == 'GET':
+        return render_template('naocadastrado.html')
     login = request.form.get('username')
     senha = request.form.get('password')
 
