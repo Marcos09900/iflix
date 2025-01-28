@@ -38,8 +38,12 @@ def inserir_usuario():
 @app.route('/login', methods=['POST', 'GET'])
 def fazer_login():
 
+    if 'login' in session:
+        return render_template('iflix.html')
+
     if request.method == 'GET':
         return render_template('naocadastrado.html')
+
     login = request.form.get('username')
     senha = request.form.get('password')
 
@@ -51,8 +55,9 @@ def fazer_login():
     else:
         return render_template('principal.html')
 
-@app.route('/logout', methods=['POST'])
+@app.route('/logout', methods=['GET'])
 def fazer_logout():
+    print('ppppp')
     session.pop('login')
     return render_template('principal.html')
 
