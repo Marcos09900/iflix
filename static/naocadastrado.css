@@ -1,29 +1,61 @@
+/* Resetando margens e padding para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo para o body, definindo a imagem de fundo e centralizando o conteúdo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-image: url('background.jpg'); /* Substitua 'background.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Garante que a altura da tela seja 100% */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
 
+/* Estilo para o container da mensagem */
 .container {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para a caixa */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
 
+/* Estilo para a mensagem */
 .message {
     color: #d9534f;
     font-size: 18px;
     font-weight: bold;
     margin: 0;
 }
+
+/* Estilo para o link de logout, posicionado na parte inferior */
+.logout-btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.logout-btn a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout-btn a:hover {
+    background-color: #0056b3;
+}
+
