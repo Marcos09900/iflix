@@ -1,3 +1,4 @@
+
 from flask import *
 import dao
 
@@ -57,7 +58,6 @@ def fazer_login():
 
 @app.route('/logout', methods=['GET'])
 def fazer_logout():
-    print('ppppp')
     session.pop('login')
     return render_template('principal.html')
 
@@ -71,19 +71,21 @@ def votar_filme():
 def listar_usuarios():
 
     if 'login' in session:
-        return render_template('listar_votos.html')
+        votos = dao.listar_votos()
+        print(votos)
+        return render_template('melhores_filmes.html', lista=votos)
 
     if request.method == 'GET':
         return render_template('naocadastrado.html')
 
-    votos = dao.listar_votos()
-    print(votos)
-    return render_template('melhores_filmes.html', lista=votos)
 
-@app.route('/nao_cadastrado')
+@app.route('/nao_cadastrado' )
 def usuario_naocadastrado():
     return render_template('naocadastrado.html')
 
+@app.route('/voltar' , methods=['GET'])
+def voltar_pagina():
+    return render_template('iflix.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

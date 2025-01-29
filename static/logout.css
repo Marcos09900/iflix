@@ -1,5 +1,5 @@
 .logout-btn {
-    background-color: #26a69a; /* Cor verde mais clara, similar ao que você usou */
+    background-color: #26a69a;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -15,7 +15,7 @@
 }
 
 .logout-btn:hover {
-    background-color: #4db6ac; /* Um tom mais claro de verde para o hover */
+    background-color: #4db6ac;
     transform: scale(1.05);
 }
 
@@ -25,9 +25,44 @@
 
 @media (max-width: 768px) {
     .logout-btn {
-        width: 100%;  /* O botão ocupa a largura total da tela em dispositivos menores */
+        width: 100%;
         padding: 12px;
-        position: static; /* Remove a posição absoluta para o fluxo normal da página */
+        position: static;
         margin-top: 20px;
     }
 }
+
+.voltar-btn {
+    background-color: #26a69a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.voltar-btn:hover {
+    background-color: #4db6ac;
+    transform: scale(1.05);
+}
+
+.voltar-btn:active {
+    background-color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+    .logout-btn {
+        width: 100%;
+        padding: 12px;
+        position: static;
+        margin-top: 20px;
+    }
+}
+
