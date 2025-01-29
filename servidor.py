@@ -69,6 +69,13 @@ def votar_filme():
 
 @app.route('/listar_votos')
 def listar_usuarios():
+
+    if 'login' in session:
+        return render_template('listar_votos.html')
+
+    if request.method == 'GET':
+        return render_template('naocadastrado.html')
+
     votos = dao.listar_votos()
     print(votos)
     return render_template('melhores_filmes.html', lista=votos)
